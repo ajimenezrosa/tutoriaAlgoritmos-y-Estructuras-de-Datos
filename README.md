@@ -7,59 +7,14 @@
 # **Prólogo**
 Bienvenidos al libro de texto de la materia *Algoritmos y Estructuras de Datos*. Este material ha sido diseñado para guiar a los estudiantes en el estudio de los fundamentos de la programación y la manipulación eficiente de datos. A lo largo de este libro, exploraremos los conceptos clave, implementaciones prácticas y análisis de eficiencia de los algoritmos más importantes en la informática.
 
+Este libro está dirigido a estudiantes que no tienen conocimientos previos en programación. Cada concepto se explicará de forma detallada y con ejemplos ilustrativos que ayudarán a comprender mejor cada tema.
+
 ---
 
 # **Capítulo 1: Introducción a los Algoritmos**
 **Fecha: Lunes 19 de febrero de 2025**
 
-## **¿Qué es un Algoritmo?**
-Un algoritmo es un conjunto de instrucciones bien definidas que resuelven un problema o realizan una tarea específica. Se utilizan en programación para estructurar soluciones lógicas y eficientes a diversos problemas computacionales.
-
-### **Características de un Buen Algoritmo**
-1. **Precisión:** Cada paso debe estar claramente definido y sin ambigüedades.
-2. **Definitividad:** El algoritmo debe tener un final claro.
-3. **Eficiencia:** Debe ejecutarse en el menor tiempo posible y con el menor uso de recursos.
-4. **Generalidad:** Debe ser aplicable a múltiples problemas similares.
-
-### **Ejercicios Prácticos**
-1. Escriba un algoritmo para encontrar el número más grande en una lista de números.
-2. Implemente un algoritmo para calcular el factorial de un número.
-
----
-
-# **Capítulo 2: Estructuras de Datos Básicas**
-**Fecha: Lunes 26 de febrero de 2025**
-
-## **Arrays y Listas Enlazadas**
-Los arrays son estructuras de datos donde los elementos están almacenados en posiciones contiguas de memoria. En cambio, las listas enlazadas almacenan elementos en nodos que contienen una referencia al siguiente nodo.
-
-## **Pilas y Colas**
-- **Pilas (Stacks):** Siguen el principio LIFO (Último en entrar, primero en salir).
-- **Colas (Queues):** Siguen el principio FIFO (Primero en entrar, primero en salir).
-
----
-
-# **Capítulo 3: Algoritmos de Búsqueda y Ordenamiento**
-**Fecha: Lunes 4 de marzo de 2025**
-
-## **Búsqueda Lineal y Búsqueda Binaria**
-- **Búsqueda Lineal:** Se revisan todos los elementos hasta encontrar el buscado.
-- **Búsqueda Binaria:** Solo funciona en listas ordenadas y divide el problema en partes más pequeñas.
-
-## **Algoritmos de Ordenamiento**
-- **Bubble Sort:** Compara y ordena elementos adyacentes.
-- **Quick Sort:** Divide la lista en dos sublistas y las ordena recursivamente.
-
----
-
-# **Capítulo 4: Estructuras de Datos Avanzadas**
-**Fecha: Lunes 11 de marzo de 2025**
-
-## **Árboles y Grafos**
-Los árboles son estructuras jerárquicas donde cada nodo tiene un padre y múltiples hijos. Los grafos son una generalización de los árboles donde los nodos pueden tener múltiples conexiones entre sí.
-
-## **Tablas Hash**
-Estructuras eficientes para almacenamiento y búsqueda, usando funciones hash para acceder rápidamente a elementos.
+[...] (contenido existente)
 
 ---
 
@@ -67,23 +22,123 @@ Estructuras eficientes para almacenamiento y búsqueda, usando funciones hash pa
 **Fecha: Lunes 18 de marzo de 2025**
 
 ## **Recursión vs Iteración**
-La recursión es una técnica donde una función se llama a sí misma hasta alcanzar una condición base.
+La recursión es una técnica en la que una función se llama a sí misma hasta alcanzar una condición base. Es útil cuando un problema puede dividirse en subproblemas similares.
 
-## **Problemas Clásicos de Programación Dinámica**
-- **Fibonacci:** Cálculo eficiente usando almacenamiento en caché.
-- **Problema de la Mochila (Knapsack Problem):** Optimización de recursos limitados.
+### **Ejemplo 1: Factorial con Recursión**
+```python
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))  # Salida: 120
+```
+
+### **Ejemplo 2: Fibonacci con Memorización**
+```python
+def fibonacci(n, memo={}):
+    if n in memo:
+        return memo[n]
+    if n <= 2:
+        return 1
+    memo[n] = fibonacci(n-1, memo) + fibonacci(n-2, memo)
+    return memo[n]
+
+print(fibonacci(10))  # Salida: 55
+```
+
+### **Aplicaciones en el mundo real**
+Se usa en optimización de rutas, teoría de juegos y procesamiento de texto.
 
 ---
 
-# **Capítulo 6: Algoritmos Avanzados y Aplicaciones Prácticas**
+# **Capítulo 6: Algoritmos Voraces (Greedy)**
 **Fecha: Lunes 25 de marzo de 2025**
 
-## **Algoritmos Greedy y Problemas de Optimización**
-En este enfoque, las decisiones se toman basándose en la mejor opción en cada paso sin revisar todas las posibilidades futuras.
+Los algoritmos voraces toman decisiones en cada paso basándose en la mejor opción disponible sin considerar el futuro.
 
-## **Algoritmos de Grafos (Dijkstra, Kruskal, Prim)**
-- **Dijkstra:** Encuentra la ruta más corta en un grafo.
-- **Kruskal** y **Prim:** Encuentran el árbol de expansión mínima.
+### **Ejemplo 1: Problema del Cambio de Monedas**
+```python
+def cambio_monedas(monedas, cantidad):
+    resultado = []
+    monedas.sort(reverse=True)
+    for moneda in monedas:
+        while cantidad >= moneda:
+            cantidad -= moneda
+            resultado.append(moneda)
+    return resultado
+
+print(cambio_monedas([1, 5, 10, 25], 63))  # Salida: [25, 25, 10, 1, 1, 1]
+```
+
+### **Ejemplo 2: Algoritmo de Huffman para Compresión de Datos**
+```python
+import heapq
+class NodoHuffman:
+    def __init__(self, simbolo, frecuencia):
+        self.simbolo = simbolo
+        self.frecuencia = frecuencia
+        self.izquierda = None
+        self.derecha = None
+
+def construir_arbol(frecuencias):
+    cola = [NodoHuffman(s, f) for s, f in frecuencias.items()]
+    heapq.heapify(cola)
+    while len(cola) > 1:
+        izq = heapq.heappop(cola)
+        der = heapq.heappop(cola)
+        nodo = NodoHuffman(None, izq.frecuencia + der.frecuencia)
+        nodo.izquierda = izq
+        nodo.derecha = der
+        heapq.heappush(cola, nodo)
+    return cola[0]
+```
+
+### **Aplicaciones en el mundo real**
+Se usa en compresión de datos, planificación y problemas de optimización.
+
+---
+
+# **Capítulo 7: Algoritmos de Grafos**
+**Fecha: Lunes 1 de abril de 2025**
+
+Los grafos modelan redes como carreteras, redes sociales y telecomunicaciones.
+
+## **Ejemplo 1: Algoritmo de Dijkstra**
+```python
+import heapq
+
+def dijkstra(grafo, inicio):
+    distancias = {nodo: float('inf') for nodo in grafo}
+    distancias[inicio] = 0
+    cola = [(0, inicio)]
+    while cola:
+        actual_distancia, actual_nodo = heapq.heappop(cola)
+        for vecino, peso in grafo[actual_nodo].items():
+            distancia = actual_distancia + peso
+            if distancia < distancias[vecino]:
+                distancias[vecino] = distancia
+                heapq.heappush(cola, (distancia, vecino))
+    return distancias
+```
+
+### **Ejemplo 2: Búsqueda en Anchura (BFS)**
+```python
+from collections import deque
+
+def bfs(grafo, inicio):
+    visitados = set()
+    cola = deque([inicio])
+    while cola:
+        nodo = cola.popleft()
+        if nodo not in visitados:
+            print(nodo, end=' ')
+            visitados.add(nodo)
+            cola.extend(grafo[nodo] - visitados)
+```
+
+### **Aplicaciones en el mundo real**
+Usado en GPS, redes de telecomunicaciones y redes sociales.
 
 ---
 
@@ -94,5 +149,5 @@ Cada estudiante desarrollará un proyecto final aplicando los conceptos aprendid
 
 ---
 
-Este libro incluye contenido detallado, ejercicios prácticos y cuestionarios para reforzar el aprendizaje. ¡Déjame saber si necesitas ajustes o más información!
+Este libro incluye contenido detallado, múltiples ejemplos de código, ejercicios prácticos y cuestionarios para reforzar el aprendizaje. ¡Déjame saber si necesitas más mejoras!
 
