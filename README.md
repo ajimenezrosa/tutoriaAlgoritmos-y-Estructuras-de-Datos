@@ -190,27 +190,56 @@ print("Frecuencia:", frecuencia)
 
 ---
 
-## Preguntas de repaso (Examen)
+## Examen: Introducción a los Algoritmos y Estructuras de Datos
+
+### Definición de Algoritmos:
 
 1. ¿Qué es un algoritmo y cuáles son sus características principales?
-2. Da un ejemplo de un algoritmo simple en pseudocódigo.
-3. ¿Por qué es importante que un algoritmo sea finito?
-4. Proporciona un ejemplo de un algoritmo que no sea finito.
+2. Da un ejemplo de un algoritmo simple en pseudo código.
+
+### Finitud de los Algoritmos:
+
+3. Explica por qué es importante que un algoritmo sea finito.
+4. Proporciona un ejemplo de un algoritmo que no es finito.
+
+### Entrada y Salida en Algoritmos:
+
 5. ¿Qué se entiende por entrada y salida en un algoritmo?
 6. Da un ejemplo de un algoritmo con múltiples entradas y una salida.
-7. Enumera las estructuras de datos primitivas más comunes en Python.
-8. Proporciona ejemplos en Python de listas, colas, pilas y diccionarios.
-9. Define estructuras de datos no primitivas y da dos ejemplos.
-10. ¿Qué es una lista enlazada? Proporcione código en Python.
-11. ¿Por qué es importante la eficiencia de un algoritmo?
-12. Explica la diferencia entre búsqueda lineal y binaria con ejemplos.
-13. Describe dos usos de algoritmos en motores de búsqueda.
-14. ¿Cómo usan las redes sociales algoritmos para sugerir amistades?
-15. ¿Cómo funcionan los algoritmos de recomendación en e-commerce?
-16. Proporciona un ejemplo simple de recomendación en Python.
-17. Explica cómo se aplican los grafos en navegación GPS.
-18. Implementa el algoritmo de Dijkstra en Python.
-19. ¿Por qué Python es útil para aprender estos temas?
-20. Muestra un ejemplo de uso de listas, colas y pilas.
+
+### Estructuras de Datos Primitivas:
+
+7. Enumera y describe las estructuras de datos primitivas más comunes en Python.
+8. Proporciona ejemplos de uso en Python para cada una de ellas.
+
+### Estructuras de Datos No Primitivas:
+
+9. Define qué son las estructuras de datos no primitivas y da ejemplos.
+10. Describe cómo se utiliza una lista enlazada y proporciona un código de ejemplo en Python.
+
+### Eficiencia en Algoritmos:
+
+11. ¿Por qué es importante considerar la eficiencia de un algoritmo?
+12. Explica la diferencia entre búsqueda lineal y búsqueda binaria con ejemplos en Python.
+
+### Aplicaciones de Algoritmos en la Vida Real:
+
+13. Da dos ejemplos de cómo los algoritmos son utilizados en motores de búsqueda.
+14. Explica cómo se utilizan los algoritmos en las redes sociales para recomendar amigos.
+
+### Algoritmos de Recomendación:
+
+15. Describe cómo funcionan los algoritmos de recomendación en plataformas de comercio electrónico.
+16. Proporciona un ejemplo simple de un algoritmo de recomendación en Python.
+
+### Algoritmos de Navegación GPS:
+
+17. Explica el uso de grafos en sistemas de navegación GPS.
+18. Implementa el algoritmo de Dijkstra en Python para encontrar la ruta más corta entre dos puntos.
+
+### Python para Algoritmos y Estructuras de Datos:
+
+19. ¿Por qué Python es una herramienta útil para estudiar algoritmos y estructuras de datos?
+20. Da ejemplos de uso de listas, colas y pilas en Python.
 
 ---
