@@ -2,39 +2,39 @@
 
 **Autor: José Alejandro Jiménez Rosa**
 
----
-
-```markdown
 # Capítulo 1: Introducción a los Algoritmos y Estructuras de Datos
 
-## ¿Qué son los algoritmos?
+## 1.1 ¿Qué es un algoritmo?
 
-Un **algoritmo** es un conjunto de instrucciones definidas, ordenadas y finitas que permiten realizar una tarea o resolver un problema. Son fundamentales en la informática porque proporcionan una secuencia clara de pasos para lograr un objetivo específico.
+Un **algoritmo** es una secuencia ordenada y finita de pasos definidos que resuelven un problema o ejecutan una tarea específica. Los algoritmos son el fundamento de la programación informática, ya que permiten expresar de manera lógica y sistemática la solución a un problema.
 
-### Características de los algoritmos:
-- Finito: debe terminar después de un número limitado de pasos.
-- Definido: cada paso debe estar claramente especificado.
-- Entrada: puede tener cero o más datos de entrada.
-- Salida: debe producir al menos una salida.
-- Preciso: cada instrucción debe poder realizarse en un tiempo finito.
+### Características de un algoritmo
 
-### Ejemplo en pseudocódigo:
-**Encontrar el mayor de dos números:**
+Un algoritmo debe cumplir con las siguientes características fundamentales:
+
+* **Finito:** debe terminar en un número limitado de pasos.
+* **Definido:** cada instrucción debe ser clara y no ambigua.
+* **Entrada:** puede recibir cero o más datos de entrada.
+* **Salida:** debe producir al menos una salida o resultado.
+* **Eficiente:** debe ser posible ejecutarlo en un tiempo razonable.
+
+### Ejemplo de algoritmo en pseudocódigo
+
+**Problema:** Encontrar el mayor de dos números.
 
 ```
-
 Inicio
-Leer número A
-Leer número B
-Si A > B entonces
-Imprimir "A es mayor"
-Sino
-Imprimir "B es mayor"
+  Leer número A
+  Leer número B
+  Si A > B entonces
+    Imprimir "A es mayor"
+  Sino
+    Imprimir "B es mayor"
 Fin
+```
 
-````
+### Implementación en Python
 
-### Ejemplo en Python:
 ```python
 def encontrar_mayor(A, B):
     if A > B:
@@ -47,33 +47,37 @@ A = 5
 B = 3
 mayor = encontrar_mayor(A, B)
 print(f"El mayor de {A} y {B} es {mayor}")
-````
+```
 
 ---
 
-## ¿Qué son las estructuras de datos?
+## 1.2 ¿Qué son las estructuras de datos?
 
-Una **estructura de datos** es una manera de organizar, gestionar y almacenar datos para que se pueda acceder a ellos y modificarlos de forma eficiente.
+Una **estructura de datos** es una forma organizada de almacenar y manipular información en un programa de manera eficiente. Son esenciales para implementar algoritmos de manera eficaz.
 
-### Tipos:
+### Clasificación
 
-* **Primitivos**: enteros, flotantes, booleanos, caracteres.
-* **No primitivos**: listas, pilas, colas, árboles, grafos.
-
----
-
-## Importancia de los algoritmos y estructuras de datos
-
-* Mejoran la eficiencia de un programa.
-* Permiten descomponer problemas complejos.
-* Se pueden reutilizar en varios proyectos.
-* Facilitan el mantenimiento del código.
+* **Primitivas:** enteros, flotantes, booleanos, caracteres.
+* **No primitivas:** listas, pilas, colas, árboles, grafos, tablas hash.
 
 ---
 
-## Ejemplos de la vida real
+## 1.3 Importancia de los algoritmos y estructuras de datos
 
-### 1. Motores de búsqueda
+Los algoritmos y las estructuras de datos permiten:
+
+* Mejorar el rendimiento del software.
+* Resolver problemas complejos dividiéndolos en subproblemas.
+* Reutilizar soluciones en diferentes contextos.
+* Facilitar el mantenimiento del código.
+
+---
+
+## 1.4 Aplicaciones en la vida real
+
+### 1.4.1 Motores de búsqueda
+
+Usan algoritmos de búsqueda y estructuras como índices invertidos y grafos para procesar millones de páginas rápidamente.
 
 ```python
 def busqueda_lineal(lista, objetivo):
@@ -81,16 +85,11 @@ def busqueda_lineal(lista, objetivo):
         if lista[i] == objetivo:
             return i
     return -1
-
-lista = [3, 1, 4, 1, 5, 9, 2, 6, 5]
-objetivo = 5
-indice = busqueda_lineal(lista, objetivo)
-print(f"El objetivo {objetivo} está en el índice {indice}")
 ```
 
----
+### 1.4.2 Redes sociales
 
-### 2. Redes sociales (Grafo)
+Utilizan **grafos** para representar conexiones entre usuarios.
 
 ```python
 grafo = {
@@ -102,16 +101,11 @@ grafo = {
 
 def amigos_comunes(grafo, persona1, persona2):
     return set(grafo[persona1]) & set(grafo[persona2])
-
-persona1 = "Alice"
-persona2 = "Bob"
-comunes = amigos_comunes(grafo, persona1, persona2)
-print(f"Amigos comunes entre {persona1} y {persona2}: {comunes}")
 ```
 
----
+### 1.4.3 Comercio electrónico
 
-### 3. Comercio electrónico (Recomendación)
+Emplean algoritmos de recomendación y estructuras de datos para personalizar la experiencia del usuario.
 
 ```python
 productos = {
@@ -123,14 +117,11 @@ productos = {
 def calificacion_promedio(producto):
     calificaciones = productos[producto]
     return sum(calificaciones) / len(calificaciones)
-
-for producto in productos:
-    print(f"La calificación promedio de {producto} es {calificacion_promedio(producto)}")
 ```
 
----
+### 1.4.4 Navegación GPS
 
-### 4. Navegación GPS (Dijkstra)
+Los sistemas GPS como Google Maps utilizan algoritmos como **Dijkstra** para encontrar rutas óptimas.
 
 ```python
 import heapq
@@ -153,31 +144,15 @@ def dijkstra(grafo, inicio):
                 heapq.heappush(pq, (distancia, vecino))
 
     return distancias
-
-grafo = {
-    'A': {'B': 1, 'C': 4},
-    'B': {'A': 1, 'C': 2, 'D': 5},
-    'C': {'A': 4, 'B': 2, 'D': 1},
-    'D': {'B': 5, 'C': 1}
-}
-
-inicio = 'A'
-distancias = dijkstra(grafo, inicio)
-print(f"Distancias desde {inicio}: {distancias}")
 ```
 
 ---
 
-## Python como herramienta para estudiar algoritmos y estructuras de datos
+## 1.5 Python como herramienta para el estudio
 
-### Ventajas:
+Python es ideal para el aprendizaje de algoritmos por su sintaxis clara, bibliotecas avanzadas y su entorno interactivo.
 
-* Sintaxis clara.
-* Bibliotecas como `collections` y `heapq`.
-* Interactivo y educativo.
-* Gran comunidad.
-
-### Ejemplo de uso de estructuras básicas en Python
+### Ejemplos prácticos:
 
 #### Listas
 
@@ -187,69 +162,55 @@ print("Máximo:", max(numeros))
 print("Ordenada:", sorted(numeros))
 ```
 
-#### Cola (FIFO)
+#### Colas
 
 ```python
 from collections import deque
 
-cola = deque()
-cola.append(1)
-cola.append(2)
-cola.append(3)
-print("Salida:", cola.popleft())
-print("Cola:", list(cola))
+cola = deque([1, 2, 3])
+print("Elemento retirado:", cola.popleft())
 ```
 
-#### Pila (LIFO)
+#### Pilas
 
 ```python
-pila = []
-pila.append(1)
-pila.append(2)
-pila.append(3)
-print("Salida:", pila.pop())
-print("Pila:", pila)
+pila = [1, 2, 3]
+print("Elemento retirado:", pila.pop())
 ```
 
-#### Diccionario para contar frecuencias
+#### Diccionarios (conteo de frecuencia)
 
 ```python
 elementos = ['a', 'b', 'a', 'c', 'b', 'a']
 frecuencia = {}
-
 for e in elementos:
-    if e in frecuencia:
-        frecuencia[e] += 1
-    else:
-        frecuencia[e] = 1
-
+    frecuencia[e] = frecuencia.get(e, 0) + 1
 print("Frecuencia:", frecuencia)
 ```
 
 ---
 
-# Examen: Introducción a los Algoritmos y Estructuras de Datos
+## Preguntas de repaso (Examen)
 
 1. ¿Qué es un algoritmo y cuáles son sus características principales?
 2. Da un ejemplo de un algoritmo simple en pseudocódigo.
-3. Explica por qué es importante que un algoritmo sea finito.
-4. Proporciona un ejemplo de un algoritmo que no es finito.
+3. ¿Por qué es importante que un algoritmo sea finito?
+4. Proporciona un ejemplo de un algoritmo que no sea finito.
 5. ¿Qué se entiende por entrada y salida en un algoritmo?
 6. Da un ejemplo de un algoritmo con múltiples entradas y una salida.
-7. Enumera y describe las estructuras de datos primitivas más comunes en Python.
-8. Proporciona ejemplos de uso en Python para cada una de ellas.
-9. Define qué son las estructuras de datos no primitivas y da ejemplos.
-10. Describe cómo se utiliza una lista enlazada y proporciona un código de ejemplo en Python.
-11. ¿Por qué es importante considerar la eficiencia de un algoritmo?
-12. Explica la diferencia entre búsqueda lineal y búsqueda binaria con ejemplos en Python.
-13. Da dos ejemplos de cómo los algoritmos son utilizados en motores de búsqueda.
-14. Explica cómo se utilizan los algoritmos en las redes sociales para recomendar amigos.
-15. Describe cómo funcionan los algoritmos de recomendación en plataformas de comercio electrónico.
-16. Proporciona un ejemplo simple de un algoritmo de recomendación en Python.
-17. Explica el uso de grafos en sistemas de navegación GPS.
-18. Implementa el algoritmo de Dijkstra en Python para encontrar la ruta más corta entre dos puntos.
-19. ¿Por qué Python es una herramienta útil para estudiar algoritmos y estructuras de datos?
-20. Da ejemplos de uso de listas, colas y pilas en Python.
+7. Enumera las estructuras de datos primitivas más comunes en Python.
+8. Proporciona ejemplos en Python de listas, colas, pilas y diccionarios.
+9. Define estructuras de datos no primitivas y da dos ejemplos.
+10. ¿Qué es una lista enlazada? Proporcione código en Python.
+11. ¿Por qué es importante la eficiencia de un algoritmo?
+12. Explica la diferencia entre búsqueda lineal y binaria con ejemplos.
+13. Describe dos usos de algoritmos en motores de búsqueda.
+14. ¿Cómo usan las redes sociales algoritmos para sugerir amistades?
+15. ¿Cómo funcionan los algoritmos de recomendación en e-commerce?
+16. Proporciona un ejemplo simple de recomendación en Python.
+17. Explica cómo se aplican los grafos en navegación GPS.
+18. Implementa el algoritmo de Dijkstra en Python.
+19. ¿Por qué Python es útil para aprender estos temas?
+20. Muestra un ejemplo de uso de listas, colas y pilas.
 
 ---
-
