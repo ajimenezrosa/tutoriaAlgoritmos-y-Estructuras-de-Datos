@@ -4,150 +4,252 @@
 
 ---
 
-# **Prólogo**
-Bienvenidos al libro de texto de la materia *Algoritmos y Estructuras de Datos*. Este material ha sido diseñado para guiar a los estudiantes en el estudio de los fundamentos de la programación y la manipulación eficiente de datos. A lo largo de este libro, exploraremos los conceptos clave, implementaciones prácticas y análisis de eficiencia de los algoritmos más importantes en la informática.
+```markdown
+# Capítulo 1: Introducción a los Algoritmos y Estructuras de Datos
 
-Este libro está dirigido a estudiantes que no tienen conocimientos previos en programación. Cada concepto se explicará de forma detallada y con ejemplos ilustrativos que ayudarán a comprender mejor cada tema.
+## ¿Qué son los algoritmos?
+
+Un **algoritmo** es un conjunto de instrucciones definidas, ordenadas y finitas que permiten realizar una tarea o resolver un problema. Son fundamentales en la informática porque proporcionan una secuencia clara de pasos para lograr un objetivo específico.
+
+### Características de los algoritmos:
+- Finito: debe terminar después de un número limitado de pasos.
+- Definido: cada paso debe estar claramente especificado.
+- Entrada: puede tener cero o más datos de entrada.
+- Salida: debe producir al menos una salida.
+- Preciso: cada instrucción debe poder realizarse en un tiempo finito.
+
+### Ejemplo en pseudocódigo:
+**Encontrar el mayor de dos números:**
+
+```
+
+Inicio
+Leer número A
+Leer número B
+Si A > B entonces
+Imprimir "A es mayor"
+Sino
+Imprimir "B es mayor"
+Fin
+
+````
+
+### Ejemplo en Python:
+```python
+def encontrar_mayor(A, B):
+    if A > B:
+        return A
+    else:
+        return B
+
+# Ejemplo de uso
+A = 5
+B = 3
+mayor = encontrar_mayor(A, B)
+print(f"El mayor de {A} y {B} es {mayor}")
+````
 
 ---
 
-# **Capítulo 1: Introducción a los Algoritmos**
-**Fecha: Lunes 19 de febrero de 2025**
+## ¿Qué son las estructuras de datos?
 
-[...] (contenido existente)
+Una **estructura de datos** es una manera de organizar, gestionar y almacenar datos para que se pueda acceder a ellos y modificarlos de forma eficiente.
 
----
+### Tipos:
 
-# **Capítulo 5: Programación Dinámica y Recursión**
-**Fecha: Lunes 18 de marzo de 2025**
-
-## **Recursión vs Iteración**
-La recursión es una técnica en la que una función se llama a sí misma hasta alcanzar una condición base. Es útil cuando un problema puede dividirse en subproblemas similares.
-
-### **Ejemplo 1: Factorial con Recursión**
-```python
-def factorial(n):
-    if n == 0 or n == 1:
-        return 1
-    return n * factorial(n - 1)
-
-print(factorial(5))  # Salida: 120
-```
-
-### **Ejemplo 2: Fibonacci con Memorización**
-```python
-def fibonacci(n, memo={}):
-    if n in memo:
-        return memo[n]
-    if n <= 2:
-        return 1
-    memo[n] = fibonacci(n-1, memo) + fibonacci(n-2, memo)
-    return memo[n]
-
-print(fibonacci(10))  # Salida: 55
-```
-
-### **Aplicaciones en el mundo real**
-Se usa en optimización de rutas, teoría de juegos y procesamiento de texto.
+* **Primitivos**: enteros, flotantes, booleanos, caracteres.
+* **No primitivos**: listas, pilas, colas, árboles, grafos.
 
 ---
 
-# **Capítulo 6: Algoritmos Voraces (Greedy)**
-**Fecha: Lunes 25 de marzo de 2025**
+## Importancia de los algoritmos y estructuras de datos
 
-Los algoritmos voraces toman decisiones en cada paso basándose en la mejor opción disponible sin considerar el futuro.
-
-### **Ejemplo 1: Problema del Cambio de Monedas**
-```python
-def cambio_monedas(monedas, cantidad):
-    resultado = []
-    monedas.sort(reverse=True)
-    for moneda in monedas:
-        while cantidad >= moneda:
-            cantidad -= moneda
-            resultado.append(moneda)
-    return resultado
-
-print(cambio_monedas([1, 5, 10, 25], 63))  # Salida: [25, 25, 10, 1, 1, 1]
-```
-
-### **Ejemplo 2: Algoritmo de Huffman para Compresión de Datos**
-```python
-import heapq
-class NodoHuffman:
-    def __init__(self, simbolo, frecuencia):
-        self.simbolo = simbolo
-        self.frecuencia = frecuencia
-        self.izquierda = None
-        self.derecha = None
-
-def construir_arbol(frecuencias):
-    cola = [NodoHuffman(s, f) for s, f in frecuencias.items()]
-    heapq.heapify(cola)
-    while len(cola) > 1:
-        izq = heapq.heappop(cola)
-        der = heapq.heappop(cola)
-        nodo = NodoHuffman(None, izq.frecuencia + der.frecuencia)
-        nodo.izquierda = izq
-        nodo.derecha = der
-        heapq.heappush(cola, nodo)
-    return cola[0]
-```
-
-### **Aplicaciones en el mundo real**
-Se usa en compresión de datos, planificación y problemas de optimización.
+* Mejoran la eficiencia de un programa.
+* Permiten descomponer problemas complejos.
+* Se pueden reutilizar en varios proyectos.
+* Facilitan el mantenimiento del código.
 
 ---
 
-# **Capítulo 7: Algoritmos de Grafos**
-**Fecha: Lunes 1 de abril de 2025**
+## Ejemplos de la vida real
 
-Los grafos modelan redes como carreteras, redes sociales y telecomunicaciones.
+### 1. Motores de búsqueda
 
-## **Ejemplo 1: Algoritmo de Dijkstra**
+```python
+def busqueda_lineal(lista, objetivo):
+    for i in range(len(lista)):
+        if lista[i] == objetivo:
+            return i
+    return -1
+
+lista = [3, 1, 4, 1, 5, 9, 2, 6, 5]
+objetivo = 5
+indice = busqueda_lineal(lista, objetivo)
+print(f"El objetivo {objetivo} está en el índice {indice}")
+```
+
+---
+
+### 2. Redes sociales (Grafo)
+
+```python
+grafo = {
+    "Alice": ["Bob", "Cathy"],
+    "Bob": ["Alice", "Cathy", "Daisy"],
+    "Cathy": ["Alice", "Bob"],
+    "Daisy": ["Bob"]
+}
+
+def amigos_comunes(grafo, persona1, persona2):
+    return set(grafo[persona1]) & set(grafo[persona2])
+
+persona1 = "Alice"
+persona2 = "Bob"
+comunes = amigos_comunes(grafo, persona1, persona2)
+print(f"Amigos comunes entre {persona1} y {persona2}: {comunes}")
+```
+
+---
+
+### 3. Comercio electrónico (Recomendación)
+
+```python
+productos = {
+    "producto1": [5, 4, 3],
+    "producto2": [3, 4, 2],
+    "producto3": [4, 5, 5]
+}
+
+def calificacion_promedio(producto):
+    calificaciones = productos[producto]
+    return sum(calificaciones) / len(calificaciones)
+
+for producto in productos:
+    print(f"La calificación promedio de {producto} es {calificacion_promedio(producto)}")
+```
+
+---
+
+### 4. Navegación GPS (Dijkstra)
+
 ```python
 import heapq
 
 def dijkstra(grafo, inicio):
     distancias = {nodo: float('inf') for nodo in grafo}
     distancias[inicio] = 0
-    cola = [(0, inicio)]
-    while cola:
-        actual_distancia, actual_nodo = heapq.heappop(cola)
-        for vecino, peso in grafo[actual_nodo].items():
-            distancia = actual_distancia + peso
+    pq = [(0, inicio)]
+
+    while pq:
+        dist_actual, nodo_actual = heapq.heappop(pq)
+
+        if dist_actual > distancias[nodo_actual]:
+            continue
+
+        for vecino, peso in grafo[nodo_actual].items():
+            distancia = dist_actual + peso
             if distancia < distancias[vecino]:
                 distancias[vecino] = distancia
-                heapq.heappush(cola, (distancia, vecino))
+                heapq.heappush(pq, (distancia, vecino))
+
     return distancias
+
+grafo = {
+    'A': {'B': 1, 'C': 4},
+    'B': {'A': 1, 'C': 2, 'D': 5},
+    'C': {'A': 4, 'B': 2, 'D': 1},
+    'D': {'B': 5, 'C': 1}
+}
+
+inicio = 'A'
+distancias = dijkstra(grafo, inicio)
+print(f"Distancias desde {inicio}: {distancias}")
 ```
 
-### **Ejemplo 2: Búsqueda en Anchura (BFS)**
+---
+
+## Python como herramienta para estudiar algoritmos y estructuras de datos
+
+### Ventajas:
+
+* Sintaxis clara.
+* Bibliotecas como `collections` y `heapq`.
+* Interactivo y educativo.
+* Gran comunidad.
+
+### Ejemplo de uso de estructuras básicas en Python
+
+#### Listas
+
+```python
+numeros = [3, 1, 4, 1, 5, 9]
+print("Máximo:", max(numeros))
+print("Ordenada:", sorted(numeros))
+```
+
+#### Cola (FIFO)
+
 ```python
 from collections import deque
 
-def bfs(grafo, inicio):
-    visitados = set()
-    cola = deque([inicio])
-    while cola:
-        nodo = cola.popleft()
-        if nodo not in visitados:
-            print(nodo, end=' ')
-            visitados.add(nodo)
-            cola.extend(grafo[nodo] - visitados)
+cola = deque()
+cola.append(1)
+cola.append(2)
+cola.append(3)
+print("Salida:", cola.popleft())
+print("Cola:", list(cola))
 ```
 
-### **Aplicaciones en el mundo real**
-Usado en GPS, redes de telecomunicaciones y redes sociales.
+#### Pila (LIFO)
+
+```python
+pila = []
+pila.append(1)
+pila.append(2)
+pila.append(3)
+print("Salida:", pila.pop())
+print("Pila:", pila)
+```
+
+#### Diccionario para contar frecuencias
+
+```python
+elementos = ['a', 'b', 'a', 'c', 'b', 'a']
+frecuencia = {}
+
+for e in elementos:
+    if e in frecuencia:
+        frecuencia[e] += 1
+    else:
+        frecuencia[e] = 1
+
+print("Frecuencia:", frecuencia)
+```
 
 ---
 
-# **Proyecto Final**
-**Fecha de entrega: Lunes 1 de abril de 2025**
+# Examen: Introducción a los Algoritmos y Estructuras de Datos
 
-Cada estudiante desarrollará un proyecto final aplicando los conceptos aprendidos a un problema real, utilizando estructuras de datos y algoritmos eficientes.
+1. ¿Qué es un algoritmo y cuáles son sus características principales?
+2. Da un ejemplo de un algoritmo simple en pseudocódigo.
+3. Explica por qué es importante que un algoritmo sea finito.
+4. Proporciona un ejemplo de un algoritmo que no es finito.
+5. ¿Qué se entiende por entrada y salida en un algoritmo?
+6. Da un ejemplo de un algoritmo con múltiples entradas y una salida.
+7. Enumera y describe las estructuras de datos primitivas más comunes en Python.
+8. Proporciona ejemplos de uso en Python para cada una de ellas.
+9. Define qué son las estructuras de datos no primitivas y da ejemplos.
+10. Describe cómo se utiliza una lista enlazada y proporciona un código de ejemplo en Python.
+11. ¿Por qué es importante considerar la eficiencia de un algoritmo?
+12. Explica la diferencia entre búsqueda lineal y búsqueda binaria con ejemplos en Python.
+13. Da dos ejemplos de cómo los algoritmos son utilizados en motores de búsqueda.
+14. Explica cómo se utilizan los algoritmos en las redes sociales para recomendar amigos.
+15. Describe cómo funcionan los algoritmos de recomendación en plataformas de comercio electrónico.
+16. Proporciona un ejemplo simple de un algoritmo de recomendación en Python.
+17. Explica el uso de grafos en sistemas de navegación GPS.
+18. Implementa el algoritmo de Dijkstra en Python para encontrar la ruta más corta entre dos puntos.
+19. ¿Por qué Python es una herramienta útil para estudiar algoritmos y estructuras de datos?
+20. Da ejemplos de uso de listas, colas y pilas en Python.
 
 ---
-
-Este libro incluye contenido detallado, múltiples ejemplos de código, ejercicios prácticos y cuestionarios para reforzar el aprendizaje. ¡Déjame saber si necesitas más mejoras!
 
