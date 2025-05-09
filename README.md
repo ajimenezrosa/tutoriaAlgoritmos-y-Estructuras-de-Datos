@@ -1,6 +1,6 @@
-**Libro de Texto: Algoritmos y Estructuras de Datos**
+# **Libro de Texto: Algoritmos y Estructuras de Datos**
 
-**Autor: José Alejandro Jiménez Rosa**
+## **Autor: José Alejandro Jiménez Rosa**
 
 # Capítulo 1: Introducción a los Algoritmos y Estructuras de Datos
 
