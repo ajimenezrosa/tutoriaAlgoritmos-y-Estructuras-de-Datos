@@ -243,3 +243,383 @@ print("Frecuencia:", frecuencia)
 20. Da ejemplos de uso de listas, colas y pilas en Python.
 
 ---
+
+
+
+
+
+### Capítulo 2: Conceptos Básicos de Python<a name="2"></a>
+
+Python es un lenguaje de programación de alto nivel y de propósito general que se destaca por su simplicidad y legibilidad. En este capítulo, aprenderemos los conceptos básicos de Python que son fundamentales para implementar y entender algoritmos y estructuras de datos.
+
+#### Sintaxis básica<a name="21"></a>
+
+Python tiene una sintaxis limpia y sencilla que facilita la lectura y escritura del código. A continuación, se presentan algunos conceptos básicos de la sintaxis de Python.
+
+##### Variables y tipos de datos<a name="22"></a>
+
+En Python, no es necesario declarar el tipo de una variable antes de usarla. La asignación de un valor a una variable se realiza con el operador `=`.
+
+**Ejemplo:**
+
+```python
+# Variables y tipos de datos
+entero = 10
+flotante = 3.14
+cadena = "Hola, Mundo"
+booleano = True
+
+print(entero)
+print(flotante)
+print(cadena)
+print(booleano)
+```
+
+##### Operadores
+
+Python soporta varios tipos de operadores:
+
+1. **Aritméticos:** `+`, `-`, `*`, `/`, `//` (división entera), `%` (módulo), `**` (potencia)
+2. **Relacionales:** `==`, `!=`, `>`, `<`, `>=`, `<=`
+3. **Lógicos:** `and`, `or`, `not`
+4. **Asignación:** `=`, `+=`, `-=`, `*=`, `/=`, `//=`, `%=`, `**=`
+
+**Ejemplo:**
+
+```python
+a = 5
+b = 3
+
+# Operadores aritméticos
+print(a + b)  # 8
+print(a - b)  # 2
+print(a * b)  # 15
+print(a / b)  # 1.666...
+print(a // b) # 1
+print(a % b)  # 2
+print(a ** b) # 125
+
+# Operadores relacionales
+print(a == b)  # False
+print(a != b)  # True
+print(a > b)   # True
+print(a < b)   # False
+print(a >= b)  # True
+print(a <= b)  # False
+
+# Operadores lógicos
+print(a > 2 and b < 5)  # True
+print(a > 2 or b > 5)   # True
+print(not(a > 2))       # False
+```
+
+#### Estructuras de control<a name="23"></a>
+
+Python proporciona varias estructuras de control para el flujo de ejecución del programa.
+
+##### Condicionales
+
+La estructura condicional `if`, `elif` y `else` se usa para tomar decisiones basadas en condiciones.
+
+**Ejemplo:**
+
+```python
+x = 10
+
+if x > 0:
+    print("x es positivo")
+elif x < 0:
+    print("x es negativo")
+else:
+    print("x es cero")
+```
+
+##### Bucles
+
+Python soporta dos tipos de bucles: `for` y `while`.
+
+**Bucle `for`:**
+
+```python
+# Bucle for
+for i in range(5):
+    print(i)
+```
+
+**Bucle `while`:**
+
+```python
+# Bucle while
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+```
+
+#### Funciones y módulos<a name="24"></a>
+
+Las funciones son bloques de código reutilizables que realizan una tarea específica. Se definen usando la palabra clave `def`.
+
+**Ejemplo:**
+
+```python
+def suma(a, b):
+    return a + b
+
+resultado = suma(3, 5)
+print(resultado)  # 8
+```
+
+Los módulos son archivos que contienen definiciones y declaraciones de Python. Puedes importar un módulo usando la palabra clave `import`.
+
+**Ejemplo:**
+
+```python
+import math
+
+print(math.sqrt(16))  # 4.0
+```
+
+---
+
+### Ejercicios
+
+1. **Variables y Operadores:**
+    - Define dos variables con valores enteros y realiza operaciones aritméticas básicas (suma, resta, multiplicación, división).
+      **Descripción:** 
+      Define dos variables enteras y usa los operadores aritméticos para realizar las operaciones mencionadas. Imprime los resultados.
+      **Ejemplo:**
+      ```python
+      a = 10
+      b = 5
+      print(a + b)  # 15
+      print(a - b)  # 5
+      print(a * b)  # 50
+      print(a / b)  # 2.0
+      ```
+    - Define una variable de tipo cadena y usa operadores de concatenación para unirla con otra cadena.
+      **Descripción:**
+      Crea dos variables de tipo cadena y únelas usando el operador `+`. Imprime el resultado.
+      **Ejemplo:**
+      ```python
+      saludo = "Hola"
+      nombre = "Mundo"
+      mensaje = saludo + ", " + nombre
+      print(mensaje)  # Hola, Mundo
+      ```
+
+2. **Condicionales:**
+    - Escribe un programa que tome un número como entrada y determine si es positivo, negativo o cero.
+      **Descripción:**
+      Usa la estructura `if-elif-else` para evaluar el valor de una variable y determinar si es positivo, negativo o cero. Imprime el resultado.
+      **Ejemplo:**
+      ```python
+      numero = int(input("Introduce un número: "))
+      if numero > 0:
+          print("El número es positivo")
+      elif numero < 0:
+          print("El número es negativo")
+      else:
+          print("El número es cero")
+      ```
+    - Escribe un programa que tome la edad de una persona como entrada y determine si es un niño, un adolescente, un adulto o un anciano.
+      **Descripción:**
+      Usa la estructura `if-elif-else` para evaluar la edad y categorizarla en niño, adolescente, adulto o anciano. Imprime el resultado.
+      **Ejemplo:**
+      ```python
+      edad = int(input("Introduce tu edad: "))
+      if edad < 13:
+          print("Eres un niño")
+      elif edad < 20:
+          print("Eres un adolescente")
+      elif edad < 65:
+          print("Eres un adulto")
+      else:
+          print("Eres un anciano")
+      ```
+
+3. **Bucles:**
+    - Escribe un programa que imprima los números del 1 al 10 usando un bucle `for`.
+      **Descripción:**
+      Usa un bucle `for` con la función `range` para iterar del 1 al 10 e imprime cada número.
+      **Ejemplo:**
+      ```python
+      for i in range(1, 11):
+          print(i)
+      ```
+    - Escribe un programa que imprima los números del 1 al 10 usando un bucle `while`.
+      **Descripción:**
+      Usa un bucle `while` para iterar del 1 al 10 e imprime cada número.
+      **Ejemplo:**
+      ```python
+      i = 1
+      while i <= 10:
+          print(i)
+          i += 1
+      ```
+
+4. **Funciones:**
+    - Define una función que tome dos números como parámetros y devuelva su producto.
+      **Descripción:**
+      Define una función que reciba dos parámetros, calcule su producto y retorne el resultado.
+      **Ejemplo:**
+      ```python
+      def producto(a, b):
+          return a * b
+
+      resultado = producto(4, 5)
+      print(resultado)  # 20
+      ```
+    - Define una función que tome una cadena como parámetro y devuelva la cadena en mayúsculas.
+      **Descripción:**
+      Define una función que reciba una cadena como parámetro y use el método `upper` para convertirla a mayúsculas. Retorna el resultado.
+      **Ejemplo:**
+      ```python
+      def convertir_mayusculas(cadena):
+          return cadena.upper()
+
+      resultado = convertir_mayusculas("hola")
+      print(resultado)  # HOLA
+      ```
+
+5. **Módulos:**
+    - Usa el módulo `random` para generar un número aleatorio entre 1 y 100.
+      **Descripción:**
+      Importa el módulo `random` y usa la función `randint` para generar un número aleatorio entre 1 y 100. Imprime el resultado.
+      **Ejemplo:**
+      ```python
+      import random
+      numero_aleatorio = random.randint(1, 100)
+      print(numero_aleatorio)
+      ```
+    - Usa el módulo `datetime` para imprimir la fecha y hora actuales.
+      **Descripción:**
+      Importa el módulo `datetime` y usa la función `now` para obtener la fecha y hora actuales. Imprime el resultado.
+      **Ejemplo:**
+      ```python
+      from datetime import datetime
+      fecha_hora_actual = datetime.now()
+      print(fecha_hora_actual)
+      ```
+
+---
+
+### Examen: Conceptos Básicos de Python
+
+1. **Variables:**
+    - **Pregunta:** ¿Cómo se define una variable en Python y cómo se asigna un valor? Da un ejemplo.
+      <!-- **Respuesta:** Se define una variable simplemente asignándole un valor usando el operador `=`. Ejemplo:
+      ```python
+      x = 10
+      ```
+      **Justificación:** En Python, no es necesario declarar explícitamente el tipo de la variable, se infiere del valor asignado. -->
+
+2. **Tipos de datos:**
+    - **Pregunta:** Enumera los tipos de datos  básicos en Python y proporciona un ejemplo de cada uno.
+      <!-- **Respuesta:** Enteros (`int`), flotantes (`float`), cadenas (`str`), booleanos (`bool`).
+      ```python
+      entero = 10
+      flotante = 3.14
+      cadena = "Hola"
+      booleano = True
+      ```
+      **Justificación:** Estos son los tipos de datos fundamentales en Python, que cubren las necesidades básicas de almacenamiento de datos. -->
+
+3. **Operadores aritméticos:**
+    - **Pregunta:** ¿Cuáles son los operadores aritméticos en Python? Da un ejemplo de cada uno.
+      <!-- **Respuesta:** `+`, `-`, `*`, `/`, `//`, `%`, `**`.
+      ```python
+      a = 5
+      b = 2
+      print(a + b)  # 7
+      print(a - b)  # 3
+      print(a * b)  # 10
+      print(a / b)  # 2.5
+      print(a // b) # 2
+      print(a % b)  # 1
+      print(a ** b) # 25
+      ```
+      **Justificación:** Estos operadores permiten realizar operaciones matemáticas básicas en Python. -->
+
+4. **Condicionales:**
+    - **Pregunta:** Escribe un ejemplo de una estructura condicional `if-elif-else`.
+      <!-- **Respuesta:**
+      ```python
+      x = 10
+      if x > 0:
+          print("x es positivo")
+      elif x < 0:
+          print("x es negativo")
+      else:
+          print("x es cero")
+      ```
+      **Justificación:** Esta estructura permite tomar decisiones basadas en condiciones específicas. -->
+
+5. **Bucles `for`:**
+    - **Pregunta:** ¿Cómo se usa un bucle `for` en Python? Da un ejemplo.
+      <!-- **Respuesta:**
+      ```python
+      for i in range(5):
+          print(i)
+      ```
+      **Justificación:** Un bucle `for` se utiliza para iterar sobre una secuencia de valores. -->
+
+6. **Bucles `while`:**
+    - **Pregunta:** ¿Cómo se usa un bucle `while` en Python? Da un ejemplo.
+      <!-- **Respuesta:**
+      ```python
+      i = 0
+      while i < 5:
+          print(i)
+          i += 1
+      ```
+      **Justificación:** Un bucle `while` se utiliza para repetir una acción mientras una condición sea verdadera. -->
+
+7. **Funciones:**
+    - **Pregunta:** ¿Cómo se define una función en Python? Da un ejemplo.
+      <!-- **Respuesta:**
+      ```python
+      def suma(a, b):
+          return a + b
+
+      resultado = suma(3, 5)
+      print(resultado)  # 8
+      ```
+      **Justificación:** Las funciones permiten encapsular código reutilizable que realiza una tarea específica. -->
+
+8. **Módulos:**
+    - **Pregunta:** ¿Cómo se importa un módulo en Python y cómo se usa una función de ese módulo? Da un ejemplo.
+      <!-- **Respuesta:**
+      ```python
+      import math
+      print(math.sqrt(16))  # 4.0
+      ```
+      **Justificación:** Los módulos permiten organizar el código y reutilizar funciones y clases definidas en otros archivos. -->
+
+9. **Operadores lógicos:**
+    - **Pregunta:** Enumera los operadores lógicos en Python y proporciona un ejemplo de cada uno.
+      <!-- **Respuesta:** `and`, `or`, `not`.
+      ```python
+      a = True
+      b = False
+      print(a and b)  # False
+      print(a or b)   # True
+      print(not a)    # False
+      ```
+      **Justificación:** Los operadores lógicos permiten combinar condiciones y tomar decisiones basadas en múltiples criterios. -->
+
+10. **Estructuras de control:**
+    - **Pregunta:** Escribe un programa que determine si un número es par o impar usando una estructura condicional.
+      <!-- **Respuesta:**
+      ```python
+      numero = 7
+      if numero % 2 == 0:
+          print("El número es par")
+      else:
+          print("El número es impar")
+      ```
+      **Justificación:** Esta estructura condicional permite evaluar si un número es divisible por 2 y determinar si es par o impar. -->
+
+---
+
+Este capítulo desarrolla los conceptos básicos de Python, proporcionando una base sólida para el estudio de algoritmos y estructuras de datos. Los ejercicios, ahora con descripciones de cómo hacerlos, y el examen con respuestas correctas y justificaciones, ayudan a reforzar el aprendizaje y a evaluar la comprensión de los conceptos presentados.
