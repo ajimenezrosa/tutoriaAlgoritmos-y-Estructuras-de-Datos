@@ -623,3 +623,309 @@ print(math.sqrt(16))  # 4.0
 ---
 
 Este capítulo desarrolla los conceptos básicos de Python, proporcionando una base sólida para el estudio de algoritmos y estructuras de datos. Los ejercicios, ahora con descripciones de cómo hacerlos, y el examen con respuestas correctas y justificaciones, ayudan a reforzar el aprendizaje y a evaluar la comprensión de los conceptos presentados.
+
+# 
+
+### Capítulo 3: Estructuras de Datos Lineales
+
+Las estructuras de datos lineales son fundamentales para la organización y manipulación de datos en secuencia. Este capítulo cubre las siguientes estructuras de datos lineales: listas, pilas, colas y listas enlazadas. Comprender estas estructuras y sus operaciones básicas es crucial para implementar algoritmos eficientes.
+
+#### Listas
+
+Las listas en Python son colecciones ordenadas y mutables de elementos. Pueden contener elementos de diferentes tipos y se utilizan ampliamente debido a su flexibilidad.
+
+**Operaciones básicas con listas:**
+
+1. **Creación:**
+   ```python
+   lista_vacia = []
+   lista = [1, 2, 3, 4, 5]
+   ```
+
+2. **Acceso a elementos:**
+   ```python
+   primer_elemento = lista[0]  # 1
+   ultimo_elemento = lista[-1]  # 5
+   ```
+
+3. **Modificación de elementos:**
+   ```python
+   lista[0] = 10
+   ```
+
+4. **Añadir elementos:**
+   ```python
+   lista.append(6)
+   lista.insert(2, 15)  # Insertar 15 en la posición 2
+   ```
+
+5. **Eliminar elementos:**
+   ```python
+   lista.pop()  # Elimina el último elemento
+   lista.remove(3)  # Elimina el primer 3 encontrado
+   ```
+
+6. **Recorrer la lista:**
+   ```python
+   for elemento in lista:
+       print(elemento)
+   ```
+
+**Ejemplos de uso de listas:**
+
+- Guardar una lista de nombres de estudiantes.
+- Almacenar una secuencia de números en un programa de estadísticas.
+- Implementar una lista de tareas pendientes.
+
+#### Pilas (Stacks)
+
+Las pilas son estructuras de datos que siguen el principio LIFO (Last In, First Out), donde el último elemento añadido es el primero en ser eliminado. En Python, se pueden implementar utilizando listas.
+
+**Operaciones básicas con pilas:**
+
+1. **Creación:**
+   ```python
+   pila = []
+   ```
+
+2. **Añadir elementos (push):**
+   ```python
+   pila.append(1)
+   pila.append(2)
+   ```
+
+3. **Eliminar elementos (pop):**
+   ```python
+   elemento = pila.pop()  # Elimina y retorna el último elemento
+   ```
+
+4. **Obtener el elemento superior sin eliminarlo:**
+   ```python
+   elemento_superior = pila[-1]
+   ```
+
+**Ejemplos de uso de pilas:**
+
+- Implementación de deshacer/rehacer en editores de texto.
+- Evaluación de expresiones matemáticas.
+- Manejo de llamadas a funciones y recursión.
+
+#### Colas (Queues)
+
+Las colas son estructuras de datos que siguen el principio FIFO (First In, First Out), donde el primer elemento añadido es el primero en ser eliminado. En Python, se pueden implementar utilizando la clase `deque` del módulo `collections`.
+
+**Operaciones básicas con colas:**
+
+1. **Creación:**
+   ```python
+   from collections import deque
+   cola = deque()
+   ```
+
+2. **Añadir elementos (enqueue):**
+   ```python
+   cola.append(1)
+   cola.append(2)
+   ```
+
+3. **Eliminar elementos (dequeue):**
+   ```python
+   elemento = cola.popleft()  # Elimina y retorna el primer elemento
+   ```
+
+4. **Obtener el primer elemento sin eliminarlo:**
+   ```python
+   primer_elemento = cola[0]
+   ```
+
+**Ejemplos de uso de colas:**
+
+- Gestión de tareas en un servidor de impresión.
+- Simulación de líneas de espera en sistemas de colas.
+- Procesamiento de elementos en sistemas de mensajería.
+
+#### Listas Enlazadas
+
+Las listas enlazadas son colecciones de nodos donde cada nodo contiene un valor y una referencia al siguiente nodo. Se utilizan cuando se requiere una inserción y eliminación eficientes.
+
+**Operaciones básicas con listas enlazadas:**
+
+1. **Creación de un nodo:**
+   ```python
+   class Nodo:
+       def __init__(self, dato):
+           self.dato = dato
+           self.siguiente = None
+   ```
+
+2. **Creación de una lista enlazada:**
+   ```python
+   class ListaEnlazada:
+       def __init__(self):
+           self.cabeza = None
+
+       def agregar(self, dato):
+           nuevo_nodo = Nodo(dato)
+           nuevo_nodo.siguiente = self.cabeza
+           self.cabeza = nuevo_nodo
+
+       def mostrar(self):
+           nodo_actual = self.cabeza
+           while nodo_actual:
+               print(nodo_actual.dato)
+               nodo_actual = nodo_actual.siguiente
+   ```
+
+**Ejemplos de uso de listas enlazadas:**
+
+- Implementación de estructuras de datos dinámicas como pilas y colas.
+- Representación de grafos y árboles.
+- Gestión de bloques de memoria en sistemas operativos.
+
+---
+
+### Ejemplos de Uso
+
+**Listas:**
+- Almacenar calificaciones de estudiantes y calcular el promedio.
+- Gestionar un inventario de productos en una tienda.
+- Registrar los movimientos de un jugador en un juego.
+
+**Pilas:**
+- Implementar una calculadora que evalúa expresiones en notación postfija.
+- Gestionar la pila de llamadas en un programa recursivo.
+- Realizar operaciones de retroceso en un navegador web.
+
+**Colas:**
+- Controlar el orden de llegada de clientes en un sistema de atención al cliente.
+- Simular el tráfico en un sistema de simulación de tránsito.
+- Procesar tareas en un sistema de procesamiento en lotes.
+
+**Listas Enlazadas:**
+- Implementar un sistema de historial de navegación.
+- Crear una estructura de datos de conjunto disjunto.
+- Gestionar una lista de reproducción dinámica en un reproductor de música.
+
+---
+
+### Examen: Estructuras de Datos Lineales
+
+1. **¿Cuál de las siguientes opciones describe mejor una pila?**
+    - A) Una estructura de datos que sigue el principio FIFO.
+    - B) Una estructura de datos que sigue el principio LIFO.
+    - C) Una estructura de datos que permite acceso aleatorio.
+    - D) Una estructura de datos que siempre está ordenada.
+    <!-- **Respuesta:** B
+    **Justificación:** Una pila sigue el principio LIFO (Last In, First Out). -->
+
+2. **¿Qué método se utiliza para eliminar el último elemento de una lista en Python?**
+    - A) `remove()`
+    - B) `pop()`
+    - C) `delete()`
+    - D) `extract()`
+    <!-- **Respuesta:** B
+    **Justificación:** El método `pop()` elimina y retorna el último elemento de una lista en Python. -->
+
+3. **¿Qué estructura de datos es adecuada para implementar una cola?**
+    - A) Lista
+    - B) Diccionario
+    - C) `deque` de `collections`
+    - D) Conjunto
+    <!-- **Respuesta:** C
+    **Justificación:** La clase `deque` de `collections` es adecuada para implementar colas debido a su eficiencia en operaciones de inserción y eliminación en ambos extremos. -->
+
+4. **¿Cuál es la complejidad temporal de acceder a un elemento en una lista enlazada?**
+    - A) O(1)
+    - B) O(log n)
+    - C) O(n)
+    - D) O(n log n)
+    <!-- **Respuesta:** C
+    **Justificación:** Acceder a un elemento en una lista enlazada tiene una complejidad temporal de O(n) porque requiere recorrer la lista desde el principio hasta el elemento deseado. -->
+
+5. **¿Qué estructura de datos usarías para implementar un sistema de deshacer/rehacer?**
+    - A) Lista
+    - B) Cola
+    - C) Pila
+    - D) Diccionario
+    <!-- **Respuesta:** C
+    **Justificación:** Una pila es adecuada para implementar un sistema de deshacer/rehacer porque permite agregar y quitar elementos del tope fácilmente. -->
+
+6. **¿Qué operación no es posible directamente en una lista enlazada simple?**
+    - A) Inserción en la cabeza
+    - B) Eliminación del último elemento
+    - C) Acceso al elemento en la posición N
+    - D) Inserción después de un nodo dado
+    <!-- **Respuesta:** C
+    **Justificación:** Acceder a un elemento en una posición específica en una lista enlazada simple no es posible directamente y requiere recorrer la lista. -->
+
+7. **¿Cuál es la principal diferencia entre una lista y una lista enlazada?**
+    - A) Las listas permiten acceso aleatorio, mientras que las listas enlazadas no.
+    - B) Las listas enlazadas son estáticas y las listas son dinámicas.
+    - C) Las listas siempre están ordenadas y las listas enlazadas no.
+    - D) Las listas enlazadas no pueden contener elementos duplicados.
+    <!-- **Respuesta:** A
+    **Justificación:** Las listas permiten acceso aleatorio a los elementos mediante índices, mientras que las listas enlazadas no permiten acceso directo y requieren recorrer los nodos. -->
+
+8. **¿Qué método de `deque` se utiliza para eliminar y retornar el primer elemento?**
+    - A) `pop()`
+    - B) `remove()`
+    - C) `popleft()`
+    - D) `deletefirst()`
+    <!-- **Respuesta:** C
+    **Justificación:** El método `popleft()` de `deque` elimina y retorna el primer elemento. -->
+
+9. **En una pila, ¿cuál es la complejidad temporal de la operación de agregar un elemento?**
+    - A) O(1)
+    - B) O(n)
+    - C) O(log n)
+    - D) O(n log n)
+    <!-- **Respuesta:** A
+    **Justificación:** Agregar un elemento a una pila tiene una complejidad temporal de O(1) porque se realiza en tiempo constante. -->
+
+10. **¿Cuál es la mejor estructura de datos para implementar una lista de reproducción dinámica en un reproductor de música?**
+    - A) Pila
+    - B) Cola
+    - C) Lista enlazada
+    - D) Diccionario
+    <!-- **Respuesta:** C
+    **Justificación:** Una lista enlazada es adecuada para implementar una lista de reproducción dinámica porque permite inserciones y eliminaciones eficientes en cualquier posición. -->
+
+---
+
+### Cierre del Capítulo
+
+Las estructuras de datos lineales son fundamentales en la informática debido a su simplicidad y eficiencia para diversas operaciones de manipulación de datos. Son las bases sobre las que se construyen estructuras de datos más complejas y algoritmos avanzados.
+
+**Importancia de las Estructuras de Datos Lineales:**
+
+1. **Eficiencia en la Gestión de Datos:**
+   Las estructuras de datos lineales permiten una gestión eficiente de los datos en términos de tiempo y espacio. Por ejemplo, las listas permiten el acceso rápido a elementos mediante índices, mientras que las pilas y colas ofrecen operaciones eficientes de inserción y eliminación en los extremos.
+
+2. **Simplicidad y Flexibilidad:**
+   Estas estructuras son fáciles de entender e implementar, lo que las hace ideales para resolver problemas comunes en la programación. La flexibilidad de las listas para contener diferentes tipos de datos y la capacidad de las listas enlazadas para crecer dinámicamente son ejemplos de esta simplicidad y flexibilidad.
+
+3. **Base para Estructuras y Algoritmos Complejos:**
+   Las estructuras de datos lineales son la base sobre la cual se construyen estructuras de datos más complejas como árboles y grafos. Además, muchos algoritmos avanzados, como los algoritmos de búsqueda y ordenamiento, dependen de la comprensión y el uso eficiente de estas estructuras.
+
+**Ejemplos de la Vida Cotidiana:**
+
+1. **Listas:**
+   - **Aplicaciones de Redes Sociales:** Las listas se utilizan para gestionar las publicaciones de un usuario, donde cada publicación es un elemento en la lista. Las operaciones como agregar una nueva publicación o eliminar una antigua son comunes.
+   - **Sistemas de Gestión de Inventarios:** Las listas son útiles para almacenar productos y sus detalles en una tienda. Se pueden realizar operaciones como agregar nuevos productos, eliminar productos agotados y modificar detalles de productos existentes.
+
+2. **Pilas:**
+   - **Sistemas de Navegación Web:** Los navegadores web utilizan pilas para gestionar el historial de navegación. Cada vez que un usuario visita una nueva página, la URL se agrega a la pila. Al presionar el botón de "Atrás", la URL actual se elimina de la pila y se muestra la URL anterior.
+   - **Editores de Texto:** Las pilas se utilizan para implementar la funcionalidad de deshacer/rehacer. Cada cambio en el documento se apila, permitiendo al usuario deshacer los cambios uno por uno.
+
+3. **Colas:**
+   - **Sistemas de Atención al Cliente:** En centros de llamadas, las colas gestionan las llamadas entrantes. La primera llamada en entrar es la primera en ser atendida, siguiendo el principio FIFO.
+   - **Impresoras Compartidas:** En oficinas, las impresoras compartidas utilizan colas para gestionar los trabajos de impresión. Los trabajos se añaden a la cola y se procesan en el orden en que se reciben.
+
+4. **Listas Enlazadas:**
+   - **Sistemas de Gestión de Memoria:** Los sistemas operativos utilizan listas enlazadas para gestionar bloques de memoria libres y ocupados, permitiendo una gestión eficiente de la memoria.
+   - **Aplicaciones de Música:** Las listas de reproducción en aplicaciones de música utilizan listas enlazadas para permitir la fácil inserción y eliminación de canciones en cualquier posición de la lista.
+
+En resumen, las estructuras de datos lineales proporcionan una base sólida para el desarrollo de algoritmos eficientes y sistemas complejos. Su comprensión y uso adecuado son esenciales para cualquier programador que desee crear aplicaciones robustas y de alto rendimiento. El conocimiento de estas estructuras no solo mejora la capacidad de resolver problemas de programación, sino que también es fundamental para el diseño de software optimizado y escalable.
+
+
+# 
