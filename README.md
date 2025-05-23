@@ -2,7 +2,13 @@
 
 ## **Autor: José Alejandro Jiménez Rosa**
 
-# Capítulo 1: Introducción a los Algoritmos y Estructuras de Datos
+### ***Indices***
+ [Capítulo 1: Introducción a los Algoritmos y Estructuras de Datos](#1)
+ [ Capítulo 2: Conceptos Básicos de Python](#2)
+ [Capítulo 3: Estructuras de Datos Lineales](#3)
+
+
+# Capítulo 1: Introducción a los Algoritmos y Estructuras de Datos<a name="1"></a>
 
 ## 1.1 ¿Qué es un algoritmo?
 
@@ -491,8 +497,7 @@ print("Frecuencia:", frecuencia)
 <!-- Este desarrollo proporciona respuestas correctas y justificaciones detalladas para cada pregunta del examen sobre "Introducción a los Algoritmos y Estructuras de Datos". Si necesitas más información o deseas que se profundice en algún aspecto, házmelo saber. -->
 # 
 
-
-### Capítulo 2: Conceptos Básicos de Python<a name="2"></a>
+# Capítulo 2: Conceptos Básicos de Python<a name="2"></a>
 
 Python es un lenguaje de programación de alto nivel y de propósito general que se destaca por su simplicidad y legibilidad. En este capítulo, aprenderemos los conceptos básicos de Python que son fundamentales para implementar y entender algoritmos y estructuras de datos.
 
@@ -866,7 +871,7 @@ print(math.sqrt(16))  # 4.0
 
 ---
 
-# 🧪 Examen: Conceptos Básicos de Python  
+## 🧪 Examen: Conceptos Básicos de Python  
 **Asignatura:** Algoritmos y Estructuras de Datos  
 **Profesor:** José Alejandro Jiménez Rosa  
 **Modalidad:** Selección múltiple  
@@ -993,8 +998,7 @@ Este capítulo desarrolla los conceptos básicos de Python, proporcionando una b
 
 
 
-
-### Capítulo 3: Estructuras de Datos Lineales
+# Capítulo 3: Estructuras de Datos Lineales<a name="3"></a>
 
 Las estructuras de datos lineales son fundamentales para la organización y manipulación de datos en secuencia. Este capítulo cubre las siguientes estructuras de datos lineales: listas, pilas, colas y listas enlazadas. Comprender estas estructuras y sus operaciones básicas es crucial para implementar algoritmos eficientes.
 
