@@ -757,26 +757,26 @@ print(math.sqrt(16))  # 4.0
 
 1. **Variables:**
     - **Pregunta:** ¿Cómo se define una variable en Python y cómo se asigna un valor? Da un ejemplo.
-      <!-- **Respuesta:** Se define una variable simplemente asignándole un valor usando el operador `=`. Ejemplo:
+      **Respuesta:** Se define una variable simplemente asignándole un valor usando el operador `=`. Ejemplo:
       ```python
       x = 10
       ```
-      **Justificación:** En Python, no es necesario declarar explícitamente el tipo de la variable, se infiere del valor asignado. -->
+      **Justificación:** En Python, no es necesario declarar explícitamente el tipo de la variable, se infiere del valor asignado.
 
 2. **Tipos de datos:**
     - **Pregunta:** Enumera los tipos de datos básicos en Python y proporciona un ejemplo de cada uno.
-      <!-- **Respuesta:** Enteros (`int`), flotantes (`float`), cadenas (`str`), booleanos (`bool`).
+      **Respuesta:** Enteros (`int`), flotantes (`float`), cadenas (`str`), booleanos (`bool`).
       ```python
       entero = 10
       flotante = 3.14
       cadena = "Hola"
       booleano = True
       ```
-      **Justificación:** Estos son los tipos de datos fundamentales en Python, que cubren las necesidades básicas de almacenamiento de datos. -->
+      **Justificación:** Estos son los tipos de datos fundamentales en Python, que cubren las necesidades básicas de almacenamiento de datos.
 
 3. **Operadores aritméticos:**
     - **Pregunta:** ¿Cuáles son los operadores aritméticos en Python? Da un ejemplo de cada uno.
-      <!-- **Respuesta:** `+`, `-`, `*`, `/`, `//`, `%`, `**`.
+      **Respuesta:** `+`, `-`, `*`, `/`, `//`, `%`, `**`.
       ```python
       a = 5
       b = 2
@@ -788,11 +788,11 @@ print(math.sqrt(16))  # 4.0
       print(a % b)  # 1
       print(a ** b) # 25
       ```
-      **Justificación:** Estos operadores permiten realizar operaciones matemáticas básicas en Python. -->
+      **Justificación:** Estos operadores permiten realizar operaciones matemáticas básicas en Python.
 
 4. **Condicionales:**
     - **Pregunta:** Escribe un ejemplo de una estructura condicional `if-elif-else`.
-      <!-- **Respuesta:**
+      **Respuesta:**
       ```python
       x = 10
       if x > 0:
@@ -802,31 +802,31 @@ print(math.sqrt(16))  # 4.0
       else:
           print("x es cero")
       ```
-      **Justificación:** Esta estructura permite tomar decisiones basadas en condiciones específicas. -->
+      **Justificación:** Esta estructura permite tomar decisiones basadas en condiciones específicas.
 
 5. **Bucles `for`:**
     - **Pregunta:** ¿Cómo se usa un bucle `for` en Python? Da un ejemplo.
-      <!-- **Respuesta:**
+      **Respuesta:**
       ```python
       for i in range(5):
           print(i)
       ```
-      **Justificación:** Un bucle `for` se utiliza para iterar sobre una secuencia de valores. -->
+      **Justificación:** Un bucle `for` se utiliza para iterar sobre una secuencia de valores.
 
 6. **Bucles `while`:**
     - **Pregunta:** ¿Cómo se usa un bucle `while` en Python? Da un ejemplo.
-      <!-- **Respuesta:**
+      **Respuesta:**
       ```python
       i = 0
       while i < 5:
           print(i)
           i += 1
       ```
-      **Justificación:** Un bucle `while` se utiliza para repetir una acción mientras una condición sea verdadera. -->
+      **Justificación:** Un bucle `while` se utiliza para repetir una acción mientras una condición sea verdadera.
 
 7. **Funciones:**
     - **Pregunta:** ¿Cómo se define una función en Python? Da un ejemplo.
-      <!-- **Respuesta:**
+      **Respuesta:**
       ```python
       def suma(a, b):
           return a + b
@@ -834,20 +834,20 @@ print(math.sqrt(16))  # 4.0
       resultado = suma(3, 5)
       print(resultado)  # 8
       ```
-      **Justificación:** Las funciones permiten encapsular código reutilizable que realiza una tarea específica. -->
+      **Justificación:** Las funciones permiten encapsular código reutilizable que realiza una tarea específica.
 
 8. **Módulos:**
     - **Pregunta:** ¿Cómo se importa un módulo en Python y cómo se usa una función de ese módulo? Da un ejemplo.
-      <!-- **Respuesta:**
+      **Respuesta:**
       ```python
       import math
       print(math.sqrt(16))  # 4.0
       ```
-      **Justificación:** Los módulos permiten organizar el código y reutilizar funciones y clases definidas en otros archivos. -->
+      **Justificación:** Los módulos permiten organizar el código y reutilizar funciones y clases definidas en otros archivos.
 
 9. **Operadores lógicos:**
     - **Pregunta:** Enumera los operadores lógicos en Python y proporciona un ejemplo de cada uno.
-      <!-- **Respuesta:** `and`, `or`, `not`.
+      **Respuesta:** `and`, `or`, `not`.
       ```python
       a = True
       b = False
@@ -855,11 +855,11 @@ print(math.sqrt(16))  # 4.0
       print(a or b)   # True
       print(not a)    # False
       ```
-      **Justificación:** Los operadores lógicos permiten combinar condiciones y tomar decisiones basadas en múltiples criterios. -->
+      **Justificación:** Los operadores lógicos permiten combinar condiciones y tomar decisiones basadas en múltiples criterios.
 
 10. **Estructuras de control:**
     - **Pregunta:** Escribe un programa que determine si un número es par o impar usando una estructura condicional.
-      <!-- **Respuesta:**
+      **Respuesta:**
       ```python
       numero = 7
       if numero % 2 == 0:
@@ -867,7 +867,7 @@ print(math.sqrt(16))  # 4.0
       else:
           print("El número es impar")
       ```
-      **Justificación:** Esta estructura condicional permite evaluar si un número es divisible por 2 y determinar si es par o impar. -->
+      **Justificación:** Esta estructura condicional permite evaluar si un número es divisible por 2 y determinar si es par o impar.
 
 ---
 
@@ -881,73 +881,73 @@ print(math.sqrt(16))  # 4.0
 ---
 
 ### 1. ¿Cómo se define una variable en Python?
-<!-- 
+
 - A) `int x = 5`  
 - ✅ B) `x = 5`  
 - C) `define x = 5`  
 - D) `variable x = 5`  
 
-**Justificación:** En Python no se especifica el tipo; basta con usar el signo `=` para asignar un valor a una variable. -->
+**Justificación:** En Python no se especifica el tipo; basta con usar el signo `=` para asignar un valor a una variable.
 
 ---
 
 ### 2. ¿Cuál de los siguientes es un tipo de dato básico en Python?
-<!-- 
+
 - A) `character`  
 - B) `decimal`  
 - ✅ C) `list`  
 - D) `text`  
 
-**Justificación:** Python tiene tipos como `int`, `float`, `bool`, `str` y `list`. `list` es una estructura básica de datos mutable. -->
+**Justificación:** Python tiene tipos como `int`, `float`, `bool`, `str` y `list`. `list` es una estructura básica de datos mutable.
 
 ---
 
 ### 3. ¿Cuál de estos es un operador aritmético en Python?
-<!-- 
+
 - A) `>>`  
 - ✅ B) `+`  
 - C) `&`  
 - D) `===`  
 
-**Justificación:** El operador `+` se usa para sumar en Python. Otros aritméticos incluyen `-`, `*`, `/`, `//`, `%`, `**`. -->
+**Justificación:** El operador `+` se usa para sumar en Python. Otros aritméticos incluyen `-`, `*`, `/`, `//`, `%`, `**`.
 
 ---
 
 ### 4. ¿Qué estructura condicional se usa para evaluar múltiples condiciones?
-<!-- 
+
 - A) `switch`  
 - ✅ B) `if-elif-else`  
 - C) `case-when`  
 - D) `try-except`  
 
-**Justificación:** `if-elif-else` permite evaluar varias condiciones secuenciales en Python. -->
+**Justificación:** `if-elif-else` permite evaluar varias condiciones secuenciales en Python.
 
 ---
 
 ### 5. ¿Qué instrucción imprime cada elemento de una lista en un bucle `for`?
-<!-- 
+
 - A) `for i in range(lista): print(i)`  
 - B) `for print in lista:`  
 - ✅ C) `for i in lista: print(i)`  
 - D) `loop lista: print(i)`  
 
-**Justificación:** La sintaxis correcta para iterar una lista es `for elemento in lista`. -->
+**Justificación:** La sintaxis correcta para iterar una lista es `for elemento in lista`.
 
 ---
 
 ### 6. ¿Cuál es la forma correcta de usar un bucle `while` en Python?
-<!-- 
+
 - A) `while x < 5 { print(x) }`  
 - ✅ B) `while x < 5: print(x)`  
 - C) `loop(x < 5): print(x)`  
 - D) `repeat x < 5: print(x)`  
 
 **Justificación:** Python usa `while` seguido de `:` y la indentación determina el bloque del bucle.
- -->
+
 ---
 
 ### 7. ¿Cómo se define una función en Python?
-<!-- 
+
 - A) `function suma(a, b): return a + b`  
 - ✅ B) `def suma(a, b): return a + b`  
 - C) `create suma(a, b): return a + b`  
@@ -955,11 +955,11 @@ print(math.sqrt(16))  # 4.0
 
 **Justificación:** En Python, las funciones se definen con la palabra clave `def`.
 
---- -->
+---
 
 ### 8. ¿Cómo se importa y usa una función del módulo `math`?
-
-<!-- - A) `include math.sqrt(9)`  
+ 
+- A) `include math.sqrt(9)`  
 - ✅ B) `import math` y luego `math.sqrt(9)`  
 - C) `math = import("math")`  
 - D) `using math.sqrt(9)`  
@@ -970,23 +970,23 @@ print(math.sqrt(16))  # 4.0
 
 ### 9. ¿Cuál de estos es un operador lógico en Python?
 
-<!-- - A) `&&`  
+- A) `&&`  
 - ✅ B) `and`  
 - C) `&!`  
 - D) `xor`  
 
 **Justificación:** Python usa `and`, `or` y `not` como operadores lógicos. No se usa `&&`.
- -->
+
 ---
 
 ### 10. ¿Cuál es el código correcto para determinar si un número es par o impar?
 
-<!-- - A) `if numero % 2 == 1: print("Par") else: print("Impar")`  
+- A) `if numero % 2 == 1: print("Par") else: print("Impar")`  
 - ✅ B) `if numero % 2 == 0: print("Par") else: print("Impar")`  
 - C) `if numero // 2 == 0: print("Par")`  
 - D) `if numero % 2 != 1: print("Impar")`  
 
-**Justificación:** Un número es par si al dividirlo entre 2, el residuo (`%`) es 0. -->
+**Justificación:** Un número es par si al dividirlo entre 2, el residuo (`%`) es 0.
 
 ---
 
