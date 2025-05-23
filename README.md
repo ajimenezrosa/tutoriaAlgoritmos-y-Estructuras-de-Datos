@@ -3,9 +3,9 @@
 ## **Autor: José Alejandro Jiménez Rosa**
 
 ### ***Indices***
- [Capítulo 1: Introducción a los Algoritmos y Estructuras de Datos](#1)
- [ Capítulo 2: Conceptos Básicos de Python](#2)
- [Capítulo 3: Estructuras de Datos Lineales](#3)
+- [Capítulo 1: Introducción a los Algoritmos y Estructuras de Datos](#1)
+- [ Capítulo 2: Conceptos Básicos de Python](#2)
+- [Capítulo 3: Estructuras de Datos Lineales](#3)
 
 
 # Capítulo 1: Introducción a los Algoritmos y Estructuras de Datos<a name="1"></a>
