@@ -866,6 +866,127 @@ print(math.sqrt(16))  # 4.0
 
 ---
 
+# 🧪 Examen: Conceptos Básicos de Python  
+**Asignatura:** Algoritmos y Estructuras de Datos  
+**Profesor:** José Alejandro Jiménez Rosa  
+**Modalidad:** Selección múltiple  
+**Duración:** 45 minutos  
+**Instrucciones:** Selecciona la opción correcta en cada pregunta. Lee bien antes de responder.
+
+---
+
+### 1. ¿Cómo se define una variable en Python?
+<!-- 
+- A) `int x = 5`  
+- ✅ B) `x = 5`  
+- C) `define x = 5`  
+- D) `variable x = 5`  
+
+**Justificación:** En Python no se especifica el tipo; basta con usar el signo `=` para asignar un valor a una variable. -->
+
+---
+
+### 2. ¿Cuál de los siguientes es un tipo de dato básico en Python?
+<!-- 
+- A) `character`  
+- B) `decimal`  
+- ✅ C) `list`  
+- D) `text`  
+
+**Justificación:** Python tiene tipos como `int`, `float`, `bool`, `str` y `list`. `list` es una estructura básica de datos mutable. -->
+
+---
+
+### 3. ¿Cuál de estos es un operador aritmético en Python?
+<!-- 
+- A) `>>`  
+- ✅ B) `+`  
+- C) `&`  
+- D) `===`  
+
+**Justificación:** El operador `+` se usa para sumar en Python. Otros aritméticos incluyen `-`, `*`, `/`, `//`, `%`, `**`. -->
+
+---
+
+### 4. ¿Qué estructura condicional se usa para evaluar múltiples condiciones?
+<!-- 
+- A) `switch`  
+- ✅ B) `if-elif-else`  
+- C) `case-when`  
+- D) `try-except`  
+
+**Justificación:** `if-elif-else` permite evaluar varias condiciones secuenciales en Python. -->
+
+---
+
+### 5. ¿Qué instrucción imprime cada elemento de una lista en un bucle `for`?
+<!-- 
+- A) `for i in range(lista): print(i)`  
+- B) `for print in lista:`  
+- ✅ C) `for i in lista: print(i)`  
+- D) `loop lista: print(i)`  
+
+**Justificación:** La sintaxis correcta para iterar una lista es `for elemento in lista`. -->
+
+---
+
+### 6. ¿Cuál es la forma correcta de usar un bucle `while` en Python?
+<!-- 
+- A) `while x < 5 { print(x) }`  
+- ✅ B) `while x < 5: print(x)`  
+- C) `loop(x < 5): print(x)`  
+- D) `repeat x < 5: print(x)`  
+
+**Justificación:** Python usa `while` seguido de `:` y la indentación determina el bloque del bucle.
+ -->
+---
+
+### 7. ¿Cómo se define una función en Python?
+<!-- 
+- A) `function suma(a, b): return a + b`  
+- ✅ B) `def suma(a, b): return a + b`  
+- C) `create suma(a, b): return a + b`  
+- D) `func suma(a, b) = a + b`  
+
+**Justificación:** En Python, las funciones se definen con la palabra clave `def`.
+
+--- -->
+
+### 8. ¿Cómo se importa y usa una función del módulo `math`?
+
+<!-- - A) `include math.sqrt(9)`  
+- ✅ B) `import math` y luego `math.sqrt(9)`  
+- C) `math = import("math")`  
+- D) `using math.sqrt(9)`  
+
+**Justificación:** Se usa `import math` y luego se accede a sus funciones con notación de punto. -->
+
+---
+
+### 9. ¿Cuál de estos es un operador lógico en Python?
+
+<!-- - A) `&&`  
+- ✅ B) `and`  
+- C) `&!`  
+- D) `xor`  
+
+**Justificación:** Python usa `and`, `or` y `not` como operadores lógicos. No se usa `&&`.
+ -->
+---
+
+### 10. ¿Cuál es el código correcto para determinar si un número es par o impar?
+
+<!-- - A) `if numero % 2 == 1: print("Par") else: print("Impar")`  
+- ✅ B) `if numero % 2 == 0: print("Par") else: print("Impar")`  
+- C) `if numero // 2 == 0: print("Par")`  
+- D) `if numero % 2 != 1: print("Impar")`  
+
+**Justificación:** Un número es par si al dividirlo entre 2, el residuo (`%`) es 0. -->
+
+---
+
+
+
 Este capítulo desarrolla los conceptos básicos de Python, proporcionando una base sólida para el estudio de algoritmos y estructuras de datos. Los ejercicios, ahora con descripciones de cómo hacerlos, y el examen con respuestas correctas y justificaciones, ayudan a reforzar el aprendizaje y a evaluar la comprensión de los conceptos presentados.
 
 # 
