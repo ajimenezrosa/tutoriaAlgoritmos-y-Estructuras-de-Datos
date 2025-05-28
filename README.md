@@ -1303,7 +1303,7 @@ En resumen, las estructuras de datos lineales proporcionan una base sólida para
 
 # 
 
-### Capítulo 4: Estructuras de Datos No Lineales
+### Capítulo 4: Estructuras de Datos No Lineales<a name="4"></a>
 
 Las estructuras de datos no lineales permiten representar relaciones jerárquicas y redes complejas. Este capítulo cubre dos estructuras de datos no lineales fundamentales: árboles y grafos. Comprender estas estructuras y sus operaciones básicas es esencial para resolver problemas complejos de manera eficiente.
 
