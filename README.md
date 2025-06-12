@@ -1804,8 +1804,8 @@ Un grafo es una estructura de datos que consiste en un conjunto de nodos (o vér
     - C) Árbol
     - D) Cola
  
-    <!-- **Respuesta:** C
-    **Justificación:** Un árbol es una estructura de datos jerárquica que se utiliza para representar relaciones jerárquicas. -->
+     **Respuesta:** C
+    **Justificación:** Un árbol es una estructura de datos jerárquica que se utiliza para representar relaciones jerárquicas. 
 
 2. **¿Cuál es el recorrido en orden de un árbol binario con los nodos [2, 1, 3]?**
     - A) 1, 2, 3
@@ -1813,8 +1813,8 @@ Un grafo es una estructura de datos que consiste en un conjunto de nodos (o vér
     - C) 2, 3, 1
     - D) 1, 3, 2
 
-    <!-- **Respuesta:** A
-    **Justificación:** El recorrido en orden de un árbol binario visita los nodos en el orden: izquierda, raíz, derecha. -->
+     **Respuesta:** A
+    **Justificación:** El recorrido en orden de un árbol binario visita los nodos en el orden: izquierda, raíz, derecha. 
 
 3. **¿Qué estructura de datos se utiliza para representar redes complejas y relaciones?**
     - A) Lista
@@ -1822,8 +1822,8 @@ Un grafo es una estructura de datos que consiste en un conjunto de nodos (o vér
     - C) Árbol
     - D) Cola
  
-    <!-- **Respuesta:** B
-    **Justificación:** Un grafo es una estructura de datos que se utiliza para representar redes complejas y relaciones entre nodos. -->
+     **Respuesta:** B
+    **Justificación:** Un grafo es una estructura de datos que se utiliza para representar redes complejas y relaciones entre nodos. 
 
 4. **En un grafo no dirigido, ¿cómo se representa una conexión entre dos nodos?**
     - A) Mediante una arista que apunta de un nodo a otro
@@ -1831,8 +1831,8 @@ Un grafo es una estructura de datos que consiste en un conjunto de nodos (o vér
     - C) Mediante una arista bidireccional
     - D) Mediante un bucle
  
-    <!-- **Respuesta:** C
-    **Justificación:** En un grafo no dirigido, una conexión entre dos nodos se representa mediante una arista bidireccional. -->
+     **Respuesta:** C
+    **Justificación:** En un grafo no dirigido, una conexión entre dos nodos se representa mediante una arista bidireccional. 
 
 5. **¿Cuál es la complejidad temporal de insertar un valor en un árbol binario de búsqueda balanceado?**
     - A) O(1)
@@ -1840,8 +1840,8 @@ Un grafo es una estructura de datos que consiste en un conjunto de nodos (o vér
     - C) O(n)
     - D) O(n log n)
  
-    <!-- **Respuesta:** B
-    **Justificación:** Insertar un valor en un árbol binario de búsqueda balanceado tiene una complejidad temporal de O(log n) en promedio. -->
+     **Respuesta:** B
+    **Justificación:** Insertar un valor en un árbol binario de búsqueda balanceado tiene una complejidad temporal de O(log n) en promedio. 
 
 6. **¿Qué tipo de recorrido de un árbol binario visita primero la raíz, luego el subárbol izquierdo y finalmente el subárbol derecho?**
     - A) Recorrido en orden
@@ -1849,8 +1849,8 @@ Un grafo es una estructura de datos que consiste en un conjunto de nodos (o vér
     - C) Recorrido en postorden
     - D) Recorrido en nivel
   
-    <!-- **Respuesta:** B
-    **Justificación:** En el recorrido en preorden, se visita primero la raíz, luego el subárbol izquierdo y finalmente el subárbol derecho. -->
+     **Respuesta:** B
+    **Justificación:** En el recorrido en preorden, se visita primero la raíz, luego el subárbol izquierdo y finalmente el subárbol derecho. 
 
 7. **¿Cuál es la diferencia principal entre un grafo dirigido y un grafo no dirigido?**
     - A) La cantidad de nodos
@@ -1858,8 +1858,8 @@ Un grafo es una estructura de datos que consiste en un conjunto de nodos (o vér
     - C) El peso de las aristas
     - D) La presencia de ciclos
   
-    <!-- **Respuesta:** B
-    **Justificación:** En un grafo dirigido, las aristas tienen una dirección, mientras que en un grafo no dirigido, las aristas no tienen dirección. -->
+     **Respuesta:** B
+    **Justificación:** En un grafo dirigido, las aristas tienen una dirección, mientras que en un grafo no dirigido, las aristas no tienen dirección. 
 
 8. **¿Qué estructura de datos se usa para realizar una búsqueda en amplitud (BFS) en un grafo?**
     - A) Pila
@@ -1867,8 +1867,8 @@ Un grafo es una estructura de datos que consiste en un conjunto de nodos (o vér
     - C) Lista
     - D) Árbol
   
-    <!-- **Respuesta:** B
-    **Justificación:** Para realizar una búsqueda en amplitud (BFS) en un grafo se utiliza una cola. -->
+    **Respuesta:** B -->
+    **Justificación:** Para realizar una búsqueda en amplitud (BFS) en un grafo se utiliza una cola.
 
 9. **¿Qué método se utiliza para agregar un nodo a un árbol binario de búsqueda en Python?**
     - A) add()
@@ -1877,7 +1877,7 @@ Un grafo es una estructura de datos que consiste en un conjunto de nodos (o vér
     - D) agregar()
   
    **Respuesta:** D
-    <!-- **Justificación:** El método `agregar()` se utiliza comúnmente para insertar un nodo en un árbol binario de búsqueda en Python. -->
+    **Justificación:** El método `agregar()` se utiliza comúnmente para insertar un nodo en un árbol binario de búsqueda en Python.
 
 10. **¿Cuál es la principal aplicación de los grafos en las redes sociales?**
     - A) Representar relaciones jerárquicas
@@ -1885,17 +1885,17 @@ Un grafo es una estructura de datos que consiste en un conjunto de nodos (o vér
     - C) Representar tareas pendientes
     - D) Representar historial de navegación
    
-    <!-- **Respuesta:** B
-    **Justificación:** Los grafos en las redes sociales se utilizan principalmente para representar conexiones de amistad entre usuarios. -->
+    **Respuesta:** B
+    **Justificación:** Los grafos en las redes sociales se utilizan principalmente para representar conexiones de amistad entre usuarios.
 
 11. **¿Qué algoritmo se utiliza para encontrar el camino más corto en un grafo ponderado?**
     - A) Algoritmo de Dijkstra
     - B) Algoritmo DFS
     - C) Algoritmo BFS
     - D) Algoritmo de Kruskal
-<!--   
-    **Respuesta:** A
-    **Justificación:** El algoritmo de Dijkstra se utiliza para encontrar el camino más corto en un grafo ponderado. -->
+  
+     **Respuesta:** A
+    **Justificación:** El algoritmo de Dijkstra se utiliza para encontrar el camino más corto en un grafo ponderado. 
 
 12. **¿Cuál es la complejidad temporal de recorrer un árbol binario en orden?**
     - A) O(1)
@@ -1903,8 +1903,8 @@ Un grafo es una estructura de datos que consiste en un conjunto de nodos (o vér
     - C) O(n)
     - D) O(n log n)
    
-    <!-- **Respuesta:** C
-    **Justificación:** Recorrer un árbol binario en orden tiene una complejidad temporal de O(n) porque cada nodo se visita una vez. -->
+    **Respuesta:** C
+    **Justificación:** Recorrer un árbol binario en orden tiene una complejidad temporal de O(n) porque cada nodo se visita una vez.
 
 13. **¿Qué estructura de datos es más adecuada para implementar un árbol de expresión?**
     - A) Lista
@@ -1912,8 +1912,8 @@ Un grafo es una estructura de datos que consiste en un conjunto de nodos (o vér
     - C) Árbol
     - D) Cola
    
-    <!-- **Respuesta:** C
-    **Justificación:** Un árbol es más adecuado para implementar un árbol de expresión, donde cada nodo representa un operador o un operando. -->
+    **Respuesta:** C
+    **Justificación:** Un árbol es más adecuado para implementar un árbol de expresión, donde cada nodo representa un operador o un operando.
 
 14. **¿Qué estructura de datos es más adecuada para detectar ciclos en un grafo?**
     - A) Lista
@@ -1921,17 +1921,17 @@ Un grafo es una estructura de datos que consiste en un conjunto de nodos (o vér
     - C) Árbol
     - D) Grafo
    
-    <!-- **Respuesta:** D    
-    **Justificación:** Un grafo es adecuado para detectar ciclos, y se pueden usar técnicas como DFS para la detección de ciclos. -->
+    **Respuesta:** D    
+    **Justificación:** Un grafo es adecuado para detectar ciclos, y se pueden usar técnicas como DFS para la detección de ciclos.
 
 15. **¿Cuál es la principal ventaja de usar un árbol binario de búsqueda (BST)?**
     - A) Inserción rápida
     - B) Búsqueda eficiente
     - C) Ordenamiento automático de elementos
     - D) Todas las anteriores
-    <!-- **Respuesta:** D
+    **Respuesta:** D
     
-    **Justificación:** Un árbol binario de búsqueda (BST) ofrece inserción rápida, búsqueda eficiente y mantiene los elementos ordenados automáticamente. -->
+    **Justificación:** Un árbol binario de búsqueda (BST) ofrece inserción rápida, búsqueda eficiente y mantiene los elementos ordenados automáticamente.
 
 ---
 
