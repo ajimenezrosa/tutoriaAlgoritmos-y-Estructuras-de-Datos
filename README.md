@@ -2441,6 +2441,14 @@ En resumen, los algoritmos de búsqueda son herramientas poderosas que permiten 
 
 # 
 
+<!-- Estimados estudiantes,
+
+Les recuerdo que deben leer el Capítulo 5: Algoritmos de Búsqueda del manual antes del próximo miércoles. Ese día realizaremos una prueba práctica para validar los conocimientos adquiridos durante esta clase.
+
+Esta evaluación servirá como práctica y preparación para fortalecer lo aprendido.
+
+¡Éxitos y no olviden repasar!
+Profesor José Alejandro Jiménez Rosa -->
 
 
 
