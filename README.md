@@ -2985,6 +2985,100 @@ En resumen, los algoritmos de ordenamiento son fundamentales para la organizaci�
 
 # 
 
+---
+
+# 🧪 Práctica: Algoritmos de Ordenamiento
+
+**Asignatura:** Algoritmos y Estructuras de Datos
+**Profesor:** José Alejandro Jiménez Rosa
+**Universidad:** Universidad Católica Santo Domingo
+**Unidad:** Algoritmos de Ordenamiento
+**Duración estimada:** 2 horas
+**Entrega:** \[Indicar fecha de entrega]
+**Modalidad:** Individual
+
+---
+
+## 🎯 Objetivos
+
+* Comprender el funcionamiento de los algoritmos de ordenamiento más comunes.
+* Analizar la complejidad algorítmica de cada método.
+* Aplicar algoritmos de ordenamiento en problemas prácticos.
+* Comparar el rendimiento entre métodos de ordenamiento.
+
+---
+
+## 📝 Instrucciones Generales
+
+1. Implementa los algoritmos de ordenamiento indicados en el lenguaje de programación de tu preferencia (Python, Java, C o C++).
+2. Documenta tu código y utiliza funciones claras.
+3. Usa arreglos de al menos 15 elementos con datos numéricos aleatorios.
+4. Realiza pruebas de rendimiento usando funciones de tiempo de ejecución (si aplica).
+5. Entrega un informe con el código fuente, resultados de ejecución y respuestas a las preguntas.
+
+---
+
+## 🔧 Parte 1: Implementación de Algoritmos
+
+Implementa los siguientes algoritmos:
+
+* Bubble Sort (Ordenamiento burbuja)
+* Selection Sort (Ordenamiento por selección)
+* Insertion Sort (Ordenamiento por inserción)
+* Merge Sort (Ordenamiento por mezcla)
+* Quick Sort (Ordenamiento rápido)
+
+---
+
+## 🔍 Parte 2: Análisis Comparativo
+
+Para cada algoritmo:
+
+1. **Describe su funcionamiento** (en no más de 5 líneas).
+2. **Indica su complejidad temporal** en los casos:
+
+   * Mejor caso
+   * Peor caso
+   * Caso promedio
+3. **Registra el tiempo de ejecución** en milisegundos con el mismo arreglo de prueba.
+4. **Determina cuál fue el más rápido y cuál el más lento. Explica por qué.**
+
+---
+
+## 💬 Parte 3: Preguntas de Reflexión
+
+1. ¿Cuál de los algoritmos es más adecuado para arreglos pequeños? ¿Y para grandes volúmenes?
+2. ¿Qué ventajas tiene el uso de algoritmos recursivos como Merge Sort o Quick Sort?
+3. ¿Por qué Bubble Sort no es usado en aplicaciones reales, aunque sea fácil de implementar?
+
+---
+
+## 📤 Entregables
+
+* Código fuente de cada algoritmo.
+* Informe en formato PDF que incluya:
+
+  * Capturas de pantalla de los resultados.
+  * Tabla comparativa de rendimiento.
+  * Respuestas a las preguntas.
+
+---
+
+## ✅ Criterios de Evaluación
+
+| Criterio                                    | Puntos  |
+| ------------------------------------------- | ------- |
+| Implementación correcta de algoritmos       | 30      |
+| Análisis comparativo y tiempos de ejecución | 20      |
+| Respuestas reflexivas y argumentadas        | 20      |
+| Documentación y claridad del código         | 15      |
+| Presentación general del informe            | 15      |
+| **Total**                                   | **100** |
+
+---
+
+¿Te gustaría que prepare también una **rúbrica en PDF** o una **versión editable en Word/Google Docs** para entregar a los alumnos o subir a la plataforma académica?
 
 
+# 
 # 
